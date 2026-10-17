@@ -12,7 +12,7 @@ docker run -d --name <nombre contenedor> --mount type=volume,target=<ruta carpet
 ```
 destination, dst, target: La ruta donde se monta el archivo o directorio en el contenedor.
 
-
+docker run -d --name server-nginx-anon -v /usr/share/nginx/html nginx:alpine
 ### Para eliminar el contenedor y el volumen
 ```
 docker rm -fv server-nginx
